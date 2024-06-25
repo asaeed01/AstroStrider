@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://crj7lreijfaum"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_p1pub"]
-[ext_resource type="PackedScene" uid="uid://3p1k1ejmsllc" path="res://Assets/untitled.blend" id="1_ywi35"]
+[ext_resource type="PackedScene" uid="uid://3p1k1ejmsllc" path="res://Assets/MapPiece1.blend" id="1_ywi35"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hhubh"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -31,10 +31,10 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="MapPiece1" parent="." instance=ExtResource("1_ywi35")]
-transform = Transform3D(0.636942, 0, 0, 0, 1, 0, 0, 0, 0.751254, 13.9789, 0, 5.60337)
+transform = Transform3D(0.274966, 0, 0, 0, 1, 0, 0, 0, 0.407492, 110.921, 0, 5.60337)
 
-[node name="MapPiece2" parent="." instance=ExtResource("1_ywi35")]
-transform = Transform3D(0.636942, 0, 0, 0, 1, 0, 0, 0, 0.751254, -335.515, -18.1507, 5.60337)
+[node name="MapPiece1-2" parent="." instance=ExtResource("1_ywi35")]
+transform = Transform3D(0.313629, 0, 0, 0, 1, 0, 0, 0, 0.389162, -86.1784, -16.2035, 5.60337)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.856, 378.558, 0)
