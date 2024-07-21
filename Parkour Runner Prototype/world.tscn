@@ -39,7 +39,7 @@ transform = Transform3D(0.139121, 0, 0, 0, 0.97825, 0, 0, 0, 0.192143, -57.6304,
 transform = Transform3D(0.227415, 0, 0, 0, 0.968183, 0, 0, 0, 0.267279, -146.793, -119.654, 752.747)
 
 [node name="MapPiece2" parent="." instance=ExtResource("2_fh86t")]
-transform = Transform3D(0.121672, 0, 0, 0, 0.0971055, 0, 0, 0, 0.174948, -148.664, 143.004, 756.614)
+transform = Transform3D(0.121672, 0, 0, 0, 0.0971055, 0, 0, 0, 0.174948, -149.077, 145.572, 757.017)
 
 [node name="MapPiece3" parent="." instance=ExtResource("2_fh86t")]
 transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287e-09, -6.67743e-17, 4.21708e-17, 4.83775e-17, 0.191447, -234.955, 153.142, 756.772)
