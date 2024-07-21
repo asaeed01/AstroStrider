@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://crj7lreijfaum"]
+[gd_scene load_steps=10 format=3 uid="uid://crj7lreijfaum"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_p1pub"]
-[ext_resource type="PackedScene" uid="uid://3p1k1ejmsllc" path="res://Assets/MapPiece1.blend" id="1_ywi35"]
+[ext_resource type="PackedScene" uid="uid://u62fk2tempi5" path="res://Assets/MapPiece1.blend" id="1_ywi35"]
+[ext_resource type="PackedScene" uid="uid://xq1qeop2qdw1" path="res://Assets/MapPiece3.blend" id="2_fh86t"]
+[ext_resource type="PackedScene" uid="uid://drsoh1yfgofd1" path="res://Assets/MapPiece4.blend" id="4_n8v0r"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hhubh"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -31,13 +33,37 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="MapPiece1" parent="." instance=ExtResource("1_ywi35")]
-transform = Transform3D(0.274966, 0, 0, 0, 1, 0, 0, 0, 0.407492, 110.921, 0, 5.60337)
+transform = Transform3D(0.139121, 0, 0, 0, 0.97825, 0, 0, 0, 0.192143, -57.6304, -124.906, 752.747)
 
 [node name="MapPiece1-2" parent="." instance=ExtResource("1_ywi35")]
-transform = Transform3D(0.313629, 0, 0, 0, 1, 0, 0, 0, 0.389162, -86.1784, -16.2035, 5.60337)
+transform = Transform3D(0.227415, 0, 0, 0, 0.968183, 0, 0, 0, 0.267279, -146.793, -119.654, 752.747)
+
+[node name="MapPiece2" parent="." instance=ExtResource("2_fh86t")]
+transform = Transform3D(0.121672, 0, 0, 0, 0.0971055, 0, 0, 0, 0.174948, -148.664, 143.004, 756.614)
+
+[node name="MapPiece3" parent="." instance=ExtResource("2_fh86t")]
+transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287e-09, -6.67743e-17, 4.21708e-17, 4.83775e-17, 0.191447, -234.955, 153.142, 756.772)
+
+[node name="MapPiece4" parent="." instance=ExtResource("2_fh86t")]
+transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287e-09, -6.67743e-17, 4.21708e-17, 4.83775e-17, 0.191447, -292.555, 155.718, 756.831)
+
+[node name="MapPiece5" parent="." instance=ExtResource("2_fh86t")]
+transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287e-09, -6.67743e-17, 4.21708e-17, 4.83775e-17, 0.191447, -347.566, 158.306, 756.772)
+
+[node name="MapPiece6" parent="." instance=ExtResource("4_n8v0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -423.722, 156.075, 768.24)
+
+[node name="MapPiece7" parent="." instance=ExtResource("4_n8v0r")]
+transform = Transform3D(1, 0, 0, 0, 0.349194, 0.937051, 0, -0.937051, 0.349194, -514.081, 156.5, 751.738)
+
+[node name="MapPiece9" parent="." instance=ExtResource("4_n8v0r")]
+transform = Transform3D(1, 0, 0, 0, 0.349194, 0.937051, 0, -0.937051, 0.349194, -694.605, 156.5, 751.75)
+
+[node name="MapPiece8" parent="." instance=ExtResource("4_n8v0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -604.468, 156.075, 768.23)
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.856, 378.558, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.0273, 137.712, 756.072)
 script = ExtResource("1_p1pub")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]

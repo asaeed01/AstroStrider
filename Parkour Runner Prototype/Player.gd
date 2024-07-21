@@ -1,13 +1,13 @@
 extends CharacterBody3D
 
 var speed
-const WALK_SPEED = 11.5
-const SPRINT_SPEED = 21.5
-const JUMP_VELOCITY = 8.5
+const WALK_SPEED = 12.5
+const SPRINT_SPEED = 30
+const JUMP_VELOCITY = 9.5
 const SENSITIVITY = 0.004
 
 # Head Bob Variables
-const BOB_FREQ = 2.4
+const BOB_FREQ = 1
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
