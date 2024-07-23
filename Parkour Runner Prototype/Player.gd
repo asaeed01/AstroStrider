@@ -88,7 +88,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("slide") and is_on_floor() and Input.is_action_pressed("forward") and can_slide:
 		slide()
 	
-	if Input.is_action_just_released()("slide"):
+	if Input.is_action_just_released("slide"):
 		can_slide = false
 		sliding = false
 	
