@@ -1,6 +1,5 @@
 extends CharacterBody3D
 
-var speed
 const WALK_SPEED = 12.5
 const SPRINT_SPEED = 30
 const JUMP_VELOCITY = 9.5
@@ -17,6 +16,14 @@ const FOV_CHANGE = 1.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes
 var gravity = 9.8
+
+var direction = Vector3()
+var h_velocity = Vector3()
+var movement = Vector3()
+var gravity_vec = Vector3()
+var speed = 4
+var current_speed = 0
+var snap_vector = Vector3.ZERO
 
 # Floor Sliding Variables
 var fall_distance = 0
@@ -75,6 +82,16 @@ func _physics_process(delta):
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
 	
+	if Input.is_action_pressed("slide") and current_speed > 3:
+		can_slide = true
+		
+	if Input.is_action_just_pressed("slide") and is_on_floor() and Input.is_action_pressed("forward") and can_slide:
+		slide()
+	
+	if Input.is_action_just_released()("slide"):
+		can_slide = false
+		sliding = false
+	
 	# Head bob
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
@@ -92,3 +109,24 @@ func _headbob(time) -> Vector3:
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+func slide():
+	if not sliding:
+		if slide_check.is_colliding() or get_floor_angle() < 0.2:
+			slide_speed = 5
+			slide_speed += fall_distance / 10
+		else:
+			slide_speed = 2
+	sliding = true
+	
+	if slide_check.is_colliding():
+		slide_speed += get_floor_angle() / 10
+	else:
+		slide_speed -= (get_floor_angle() / 5) + 0.03
+		
+	if slide_speed < 0:
+		slide_speed = 0
+		can_slide = false
+		sliding = false
+		
+	speed = slide_speed
