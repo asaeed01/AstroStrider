@@ -18,15 +18,6 @@ const FOV_CHANGE = 1.5
 # Get the gravity from the project settings to be synced with RigidBody nodes
 var gravity = 9.8
 
-# Floor Sliding Variables
-var fall_distance = 0
-var slide_speed = 0
-var can_slide = false
-var sliding = false
-var falling = false
-
-@onready var slide_check = $Slide_Check
-
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
@@ -43,9 +34,6 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta):
-	if falling and is_on_floor() and sliding:
-		slide_speed += fall_distance / 10
-	fall_distance = -gravity_vec.y
 	
 	# Add the gravity
 	if not is_on_floor():
@@ -85,7 +73,6 @@ func _physics_process(delta):
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
 	
 	move_and_slide()
-
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
