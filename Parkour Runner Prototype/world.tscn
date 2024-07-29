@@ -33,7 +33,7 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="MapPiece1" parent="." instance=ExtResource("1_ywi35")]
-transform = Transform3D(0.139121, 0, 0, 0, 0.97825, 0, 0, 0, 0.192143, -57.6304, -127.473, 752.747)
+transform = Transform3D(0.139121, 0, 0, 0, 0.97825, 0, 0, 0, 0.192143, -57.6304, -125.69, 752.747)
 
 [node name="MapPiece1-2" parent="." instance=ExtResource("1_ywi35")]
 transform = Transform3D(0.227415, 0, 0, 0, 0.968183, 0, 0, 0, 0.267279, -146.793, -119.654, 752.747)
