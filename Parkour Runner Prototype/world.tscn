@@ -38,9 +38,6 @@ transform = Transform3D(0.139121, 0, 0, 0, 0.97825, 0, 0, 0, 0.192143, -57.6304,
 [node name="MapPiece1-2" parent="." instance=ExtResource("1_ywi35")]
 transform = Transform3D(0.227415, 0, 0, 0, 0.968183, 0, 0, 0, 0.267279, -146.793, -119.654, 752.747)
 
-[node name="MapPiece2" parent="." instance=ExtResource("2_fh86t")]
-transform = Transform3D(0.121672, 0, 0, 0, 0.0971055, 0, 0, 0, 0.174948, -149.077, 145.572, 757.017)
-
 [node name="MapPiece3" parent="." instance=ExtResource("2_fh86t")]
 transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287e-09, -6.67743e-17, 4.21708e-17, 4.83775e-17, 0.191447, -234.955, 153.142, 756.772)
 
@@ -52,6 +49,9 @@ transform = Transform3D(-5.28501e-09, -0.138702, 6.67743e-17, 0.120907, -6.06287
 
 [node name="MapPiece6" parent="." instance=ExtResource("4_n8v0r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -423.722, 156.075, 768.24)
+
+[node name="MapPiece10" parent="." instance=ExtResource("4_n8v0r")]
+transform = Transform3D(0.0802312, -0.415966, 0.593026, 2.98929e-08, 0.557286, 0.44464, -1.19438, -0.027942, 0.0398357, -175.448, 148.775, 745.537)
 
 [node name="MapPiece7" parent="." instance=ExtResource("4_n8v0r")]
 transform = Transform3D(1, 0, 0, 0, 0.349194, 0.937051, 0, -0.937051, 0.349194, -514.081, 156.5, 751.738)
