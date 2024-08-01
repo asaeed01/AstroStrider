@@ -2,10 +2,10 @@ extends CharacterBody3D
 
 var speed
 const WALK_SPEED = 12.5
-const SPRINT_SPEED = 30
+const SPRINT_SPEED = 20
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
-const JUMP_VELOCITY = 9.5
+const JUMP_VELOCITY = 5
 const SENSITIVITY = 0.004
 
 @onready var head = $Head
@@ -66,7 +66,7 @@ func _physics_process(delta):
 			is_crouching = true
 			current_height = crouch_height
 			is_sliding = true
-			slide_initial_speed = direction.length()  # Capture the player's speed before sliding
+			slide_initial_speed = velocity.length()  # Capture the player's speed before sliding
 			slide_duration = min(slide_initial_speed / SPRINT_SPEED * MAX_SLIDE_DURATION, MAX_SLIDE_DURATION)
 		else:
 			is_crouching = true
@@ -89,15 +89,15 @@ func _physics_process(delta):
 	if is_on_floor():
 		if is_sliding:
 			# Apply sliding speed with gradual deceleration
-			velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)  # Gradual deceleration
-			velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)  # Gradual deceleration
+			velocity.x = lerp(velocity.x, direction.x * speed, delta * 0.5)  # Gradual deceleration
+			velocity.z = lerp(velocity.z, direction.z * speed, delta * 0.5)  # Gradual deceleration
 		else:
 			if direction.length() > 0:
 				velocity.x = direction.x * speed
 				velocity.z = direction.z * speed
 			else:
-				velocity.x = lerp(velocity.x, 0.0, delta * 3.0)  # More gradual deceleration
-				velocity.z = lerp(velocity.z, 0.0, delta * 3.0)  # More gradual deceleration
+				velocity.x = lerp(velocity.x, 0.0, delta * 10.0)  # More snappy deceleration
+				velocity.z = lerp(velocity.z, 0.0, delta * 10.0)  # More snappy deceleration
 	else:
 		# Air control
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)  # More gradual deceleration
