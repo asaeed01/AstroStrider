@@ -65,4 +65,4 @@ shape = SubResource("ConvexPolygonShape3D_sfsy6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.708385, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00904083, 0.084549, -0.0358276)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00970459, 0.0401001, -0.75946)
