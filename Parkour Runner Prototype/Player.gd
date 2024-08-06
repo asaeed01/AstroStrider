@@ -2,15 +2,17 @@ extends CharacterBody3D
 
 var speed
 const WALK_SPEED = 13.2
-const SPRINT_SPEED = 24.3
+const SPRINT_SPEED = 27
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
 const JUMP_VELOCITY = 5
 const SENSITIVITY = 0.004
-const GRAVITY = 7.2  # Custom gravity constant
+const GRAVITY = 3  # Custom gravity constant
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var capsule = $Capsule
+@onready var collision_shape = $CollisionShape3D
 
 # FOV Variables
 const BASE_FOV = 75.0
@@ -79,6 +81,18 @@ func _physics_process(delta):
 
 	# Adjust Camera Height
 	camera.transform.origin.y = lerp(camera.transform.origin.y, current_height, delta * 10.0)
+
+	# Adjust Capsule and Collision Shape Height
+	if is_crouching:
+		capsule.scale.y = crouch_height / stand_height
+		capsule.transform.origin.y = -stand_height * 0.5 + (crouch_height * 0.5)
+		collision_shape.scale.y = crouch_height / stand_height
+		collision_shape.transform.origin.y = -stand_height * 0.5 + (crouch_height * 0.5)
+	else:
+		capsule.scale.y = 1.0
+		capsule.transform.origin.y = 0.0
+		collision_shape.scale.y = 1.0
+		collision_shape.transform.origin.y = 0.0
 
 	# FOV Adjustment
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2.0)

@@ -12,7 +12,7 @@ material = SubResource("StandardMaterial3D_2jddw")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_735vj"]
 points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xmo70"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_b5683"]
 points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dad6o"]
@@ -54,16 +54,16 @@ transform = Transform3D(13.6942, 0, 0, 0, 111.516, 0, 0, 0, 6.42353, -10.181, -2
 shape = SubResource("ConvexPolygonShape3D_735vj")
 
 [node name="StaticBody3D3" type="StaticBody3D" parent="."]
-transform = Transform3D(6.19407, 0, 0, 0, 3.08752, 0, 0, 0, 7.30166, -5.87666, 746.214, 474.721)
+transform = Transform3D(6.19407, 0, 0, 0, 3.08752, 0, 0, 0, 7.30166, 190.086, 743.341, 474.721)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D3"]
-transform = Transform3D(0.327654, 0, 0, 0, 6.86983, 0, 0, 0, 12.2496, -4.42266, -147.938, 31.091)
+transform = Transform3D(0.327654, 0, 0, 0, 6.86983, 0, 0, 0, 12.2496, -4.42266, -146.313, 31.091)
 mesh = SubResource("BoxMesh_s4plq")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
-transform = Transform3D(0.327654, 0, 0, 0, 7.50613, 0, 0, 0, 12.2496, -4.42266, -147.658, 31.091)
-shape = SubResource("ConvexPolygonShape3D_xmo70")
+transform = Transform3D(0.327654, 0, 0, 0, 6.86983, 0, 0, 0, 12.2496, -4.42266, -146.355, 31.091)
+shape = SubResource("ConvexPolygonShape3D_b5683")
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="."]
 transform = Transform3D(6.19407, 0, 0, 0, 3.08752, 0, 0, 0, 7.30166, -5.87666, 746.214, 474.721)
@@ -100,7 +100,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.9501, 281.394, 701.864)
 script = ExtResource("1_p1pub")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+[node name="Capsule" type="MeshInstance3D" parent="Player"]
 mesh = SubResource("CapsuleMesh_10nml")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
