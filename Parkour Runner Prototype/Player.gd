@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 var speed
 const WALK_SPEED = 13.2
-const SPRINT_SPEED = 24
+const SPRINT_SPEED = 25
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
 const JUMP_VELOCITY = 7.0
