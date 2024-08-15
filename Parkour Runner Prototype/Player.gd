@@ -13,6 +13,7 @@ const GRAVITY = 9.8 # Custom gravity constant
 @onready var camera = $Head/Camera3D
 @onready var capsule = $Capsule
 @onready var collision_shape = $CollisionShape3D
+@onready var animation = $Head/Camera3D/Lowpolyarms4/AnimationPlayer
 
 # FOV Variables
 const BASE_FOV = 75.0
@@ -110,6 +111,7 @@ func _physics_process(delta):
 			velocity.z = lerp(velocity.z, direction.z * speed, delta * 0.5)  # Gradual deceleration
 		else:
 			if direction.length() > 0:
+				animation.play("Run")
 				velocity.x = direction.x * speed
 				velocity.z = direction.z * speed
 			else:
