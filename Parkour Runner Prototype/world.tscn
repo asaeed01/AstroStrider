@@ -1,5 +1,6 @@
-[gd_scene load_steps=38 format=3 uid="uid://crj7lreijfaum"]
+[gd_scene load_steps=39 format=3 uid="uid://crj7lreijfaum"]
 
+[ext_resource type="Texture2D" uid="uid://k5mkjkq1vq86" path="res://Assets/AllSkyFree_Sky_ColdNight_Equirect (1).png" id="1_6xdmf"]
 [ext_resource type="Texture2D" uid="uid://cov0iq82dholj" path="res://Assets/Textures/Dark/texture_08.png" id="1_8h2x3"]
 [ext_resource type="Script" path="res://Player.gd" id="1_p1pub"]
 [ext_resource type="Texture2D" uid="uid://bjoumse7oqld2" path="res://Assets/Textures/Dark/texture_12.png" id="2_cvvaa"]
@@ -9,12 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://bu07ooag75quu" path="res://Assets/Lowpolyarms4.glb" id="7_infeg"]
 [ext_resource type="PackedScene" uid="uid://dycmgikb61vrq" path="res://Assets/Diamond.blend" id="8_mbh7f"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hhubh"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_v0yg4"]
+panorama = ExtResource("1_6xdmf")
 
 [sub_resource type="Sky" id="Sky_fmgxy"]
-sky_material = SubResource("ProceduralSkyMaterial_hhubh")
+sky_material = SubResource("PanoramaSkyMaterial_v0yg4")
 
 [sub_resource type="Environment" id="Environment_0gvl4"]
 background_mode = 2
@@ -279,7 +279,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.768163, 0, -0.435913, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.30181, 0.0296097, 0.247131, -0.778259)
 
 [node name="Lowpolyarms4" parent="Player/Head/Camera3D" instance=ExtResource("7_infeg")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.00234222, -0.11142, 0.0169067)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.00234222, -0.11142, 0.048584)
 
 [node name="StaticBody3D6" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.065, 282.383, 689.868)
@@ -306,7 +306,7 @@ transform = Transform3D(4.52223e-08, 1.47057e-10, 0.997011, 0.0054171, -0.642517
 [node name="StaticBody3D" type="StaticBody3D" parent="GlowingArrow2"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -2.93945e-07, -2.32012e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.6949e-15, 90.2996, -9.62964, -9.80704, 362.715)
+transform = Transform3D(1.053, -3.01396e-07, -2.34286e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.6949e-15, 90.2996, -9.62964, -9.80704, 362.715)
 mesh = SubResource("BoxMesh_h2xu1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="GlowingArrow2/StaticBody3D"]
@@ -365,4 +365,34 @@ transform = Transform3D(0.0366497, 0.0295116, 0.998939, -0.419463, 0.914449, -0.
 transform = Transform3D(0.0630843, 0.0342755, 0.997559, -0.191663, 0.982514, -0.0224871, -1.01716, -0.183009, 0.0661055, 277.401, 281.965, 703.798)
 
 [node name="Diamond" parent="." instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 466.329, 311.682, 672.246)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 374.797, 284.898, 693.251)
+
+[node name="Diamond2" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 340.935, 284.898, 693.251)
+
+[node name="Diamond3" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.229, 280.527, 697.996)
+
+[node name="Diamond5" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.0459, 280.595, 709.74)
+
+[node name="Diamond6" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.9653, 280.595, 693.72)
+
+[node name="Diamond7" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.4346, 278.758, 706.658)
+
+[node name="Diamond8" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7054, 278.758, 696.415)
+
+[node name="Diamond10" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.2295, 278.758, 701.749)
+
+[node name="Diamond9" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(2.45607, 0, 0, 0, 2.04421, 0, 0, 0, 2.50124, -125.564, 278.702, 701.756)
+
+[node name="Diamond4" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 293.601, 287.292, 703.616)
+
+[node name="Diamond11" parent="." instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 198.022, 283.98, 708.448)
