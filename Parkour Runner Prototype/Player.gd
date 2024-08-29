@@ -1,11 +1,11 @@
 extends CharacterBody3D
 
 var speed
-const WALK_SPEED = 13.2
-const SPRINT_SPEED = 25
+const WALK_SPEED = 30
+const SPRINT_SPEED = 28.6
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
-const JUMP_VELOCITY = 7.0
+const JUMP_VELOCITY = 60
 const SENSITIVITY = 0.004
 const GRAVITY = 9.8 # Custom gravity constant
 
@@ -21,14 +21,14 @@ const FOV_CHANGE = 1.5
 
 # Crouching and Sliding Variables
 var is_crouching = false
-var is_sliding = false# Can we Wallrun
+var is_sliding = false # Can we Wallrun
 var can_wallrun = false
 var wallrun_delay = 0.2
 
 var stand_height = 1.75
 var crouch_height = 1.0
 var current_height = stand_height
-var slide_duration = 0.0
+var slide_duration = 2.0
 const MAX_SLIDE_DURATION = 2.75
 var slide_initial_speed = 0.0
 
