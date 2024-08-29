@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://crj7lreijfaum"]
+[gd_scene load_steps=44 format=3 uid="uid://crj7lreijfaum"]
 
 [ext_resource type="Texture2D" uid="uid://k5mkjkq1vq86" path="res://Assets/AllSkyFree_Sky_ColdNight_Equirect (1).png" id="1_6xdmf"]
 [ext_resource type="Texture2D" uid="uid://cov0iq82dholj" path="res://Assets/Textures/Dark/texture_08.png" id="1_8h2x3"]
@@ -100,7 +100,14 @@ points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t61kf"]
 points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcr3c"]
+albedo_texture = ExtResource("1_8h2x3")
+
 [sub_resource type="BoxMesh" id="BoxMesh_lk1m1"]
+material = SubResource("StandardMaterial3D_kcr3c")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_15xjo"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
 [node name="World" type="Node3D"]
 
@@ -408,7 +415,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -843.555, -30.7113, 89.4796)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -617.304, -25.4893, 96.1786)
 
 [node name="GlowingTunnel" type="Node3D" parent="."]
-transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 815.562, 278.346, 688.701)
+transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 828.795, 282.098, 693.781)
 
 [node name="GlowingRing" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
 transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, 3.98273, 1.3114)
@@ -438,7 +445,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.0788, 0)
 transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -9.68036, 1.3114)
 
 [node name="NonGlowingRing5" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.1368, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00274658, -18.0603, 0.00100708)
 
 [node name="GlowingRing6" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
 transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -18.6922, 1.3114)
@@ -490,6 +497,9 @@ transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -45.3283, 0)
 
 [node name="GlowingRing14" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
 transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -45.9298, 1.3114)
+
+[node name="GlowingRing37" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.1192, -14.552, 1.3165)
 
 [node name="NonGlowingRing14" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -54.3863, 0)
@@ -623,12 +633,25 @@ transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -122.488, 0)
 [node name="GlowingRing36" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
 transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -136.642, 1.3114)
 
+[node name="GlowingRing38" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -122.888, 1.3114)
+
+[node name="GlowingRing39" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -2.11792, -86.6764, 1.3114)
+
+[node name="GlowingRing40" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -2.11792, -50.4791, 1.3114)
+
 [node name="NonGlowingRing36" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -122.488, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="GlowingTunnel"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+[node name="StaticBody3D10" type="StaticBody3D" parent="."]
+transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 840.742, 278.729, 692.981)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="GlowingTunnel/StaticBody3D"]
-transform = Transform3D(-196.147, 0, 0, 0, 6.72777, 0, 0, 0, 69.5227, 57.332, -155.883, -1.30707)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D10"]
+transform = Transform3D(-196.147, 0, 0, 0, 6.72777, 0, 0, 0, 69.5227, 53.4974, -156.579, -1.75809)
 mesh = SubResource("BoxMesh_lk1m1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D10"]
+transform = Transform3D(-196.147, 0, 0, 0, 6.72777, 0, 0, 0, 69.5227, 57.1657, -156.178, -1.40118)
+shape = SubResource("ConvexPolygonShape3D_15xjo")
