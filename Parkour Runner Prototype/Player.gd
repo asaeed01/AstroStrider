@@ -5,7 +5,7 @@ const WALK_SPEED = 30
 const SPRINT_SPEED = 28.6
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
-const JUMP_VELOCITY = 60
+const JUMP_VELOCITY = 8
 const SENSITIVITY = 0.004
 const GRAVITY = 9.8 # Custom gravity constant
 
