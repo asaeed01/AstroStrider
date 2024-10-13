@@ -1,13 +1,13 @@
 extends CharacterBody3D
 
 var speed
-const WALK_SPEED = 30
-const SPRINT_SPEED = 28.6
+const WALK_SPEED = 27.6
+const SPRINT_SPEED = 31.2
 const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
-const JUMP_VELOCITY = 8
+const JUMP_VELOCITY = 6.8
 const SENSITIVITY = 0.004
-const GRAVITY = 9.8 # Custom gravity constant
+const GRAVITY = 10 # Custom gravity constant
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
@@ -31,6 +31,14 @@ var current_height = stand_height
 var slide_duration = 2.0
 const MAX_SLIDE_DURATION = 2.75
 var slide_initial_speed = 0.0
+var spawn_point = Vector3(100, 100, 30)  # Replace with the actual desired spawn point coordinates
+
+func die():
+	print("Player has died.")
+	global_transform.origin = spawn_point  # Reset to the stored spawn point
+	velocity = Vector3.ZERO  # Reset velocity to prevent carryover motion
+
+
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -45,6 +53,8 @@ func _physics_process(delta):
 	# Add custom gravity
 	if not is_on_floor():
 		velocity.y -= GRAVITY * delta
+	if global_transform.origin.y < 100:
+		die()  # Call a function to handle player death
 
 	# Handle Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://crj7lreijfaum"]
+[gd_scene load_steps=42 format=3 uid="uid://crj7lreijfaum"]
 
 [ext_resource type="Texture2D" uid="uid://k5mkjkq1vq86" path="res://Assets/AllSkyFree_Sky_ColdNight_Equirect (1).png" id="1_6xdmf"]
 [ext_resource type="Texture2D" uid="uid://cov0iq82dholj" path="res://Assets/Textures/Dark/texture_08.png" id="1_8h2x3"]
@@ -83,40 +83,26 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uxgbi"]
 points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g86qs"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_h2xu1"]
-material = SubResource("StandardMaterial3D_g86qs")
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6qans"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xyeyc"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lw3qw"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t61kf"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcr3c"]
 albedo_texture = ExtResource("1_8h2x3")
 
 [sub_resource type="BoxMesh" id="BoxMesh_lk1m1"]
 material = SubResource("StandardMaterial3D_kcr3c")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_15xjo"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s76ln"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g7elh"]
 points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_x1edc"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5lidj"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6i5r5"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rixdx"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1pt7h"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tf22n"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
 
 [node name="World" type="Node3D"]
 
@@ -287,25 +273,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.281, 281.394, 701.864)
 script = ExtResource("1_p1pub")
 
 [node name="Capsule" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0406952, 0, 0)
 mesh = SubResource("CapsuleMesh_10nml")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0406952, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_sfsy6")
 
 [node name="Head" type="Node3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.768163, 0, -0.435913, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.30181, 0.0296097, 0.247131, -0.729553)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.30181, 0.0703049, 0.247131, -0.729553)
 
 [node name="Lowpolyarms4" parent="Player/Head/Camera3D" instance=ExtResource("6_blqma")]
 transform = Transform3D(-1, 1.52574e-09, 8.74095e-08, 3.48734e-16, 0.999848, -0.0174524, -8.74228e-08, -0.0174524, -0.999848, 0, -0.16748, 0.00457764)
 
 [node name="RayCastRight" type="RayCast3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1.88501, 0, 0, 0, 1, 0.548569, 0.984009, 0)
+transform = Transform3D(1, 0, 0, 0, 1.88501, 0, 0, 0, 1, 0.589264, 0.984009, 0)
 
 [node name="RayCastLeft" type="RayCast3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1.88501, 0, 0, 0, 1, -0.549812, 0.984009, 0)
+transform = Transform3D(1, 0, 0, 0, 1.88501, 0, 0, 0, 1, -0.509117, 0.984009, 0)
 
 [node name="StaticBody3D6" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.065, 282.383, 689.868)
@@ -324,44 +312,19 @@ shape = SubResource("ConvexPolygonShape3D_uxgbi")
 transform = Transform3D(4.52223e-08, 1.47057e-10, 0.997011, 0.0054171, -0.642517, -3.47744e-16, 1.03457, 0.00336429, -4.35808e-08, 79.1336, 290.336, 699.845)
 
 [node name="GlowingArrow4" parent="." instance=ExtResource("5_yxsxn")]
-transform = Transform3D(-0.0132144, 3.09251, -4.35807e-08, -5.77625e-10, 1.35178e-07, 0.997011, 2.52373, 0.0161926, 1.90497e-15, -107.241, 274.796, 696.882)
+transform = Transform3D(-0.0132144, 3.09251, -4.35807e-08, -5.77625e-10, 1.35178e-07, 0.997011, 2.52373, 0.0161926, 1.90497e-15, 347.879, 281.231, 688.879)
+
+[node name="GlowingArrow7" parent="." instance=ExtResource("5_yxsxn")]
+transform = Transform3D(-0.0132144, 3.09251, -4.35807e-08, -5.77625e-10, 1.35178e-07, 0.997011, 2.52373, 0.0161926, 1.90497e-15, -104.804, 274.707, 696.895)
+
+[node name="GlowingArrow6" parent="." instance=ExtResource("5_yxsxn")]
+transform = Transform3D(-0.0132144, 3.09251, -4.35807e-08, -5.77625e-10, 1.35178e-07, 0.997011, 2.52373, 0.0161926, 1.90497e-15, 532.983, 148.693, 689.546)
+
+[node name="GlowingArrow5" parent="." instance=ExtResource("5_yxsxn")]
+transform = Transform3D(1.10316e-07, 7.07805e-10, 0.997011, 0.0132145, -3.09251, -3.47744e-16, 2.52373, 0.0161927, -4.35807e-08, 446.106, 325.962, 691.107)
 
 [node name="GlowingArrow2" parent="." instance=ExtResource("5_yxsxn")]
 transform = Transform3D(4.52223e-08, 1.47057e-10, 0.997011, 0.0054171, -0.642517, -3.47744e-16, 1.03457, 0.00336429, -4.35808e-08, 79.1336, 290.336, 711.245)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="GlowingArrow2"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.01396e-07, -2.34286e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.6949e-15, 90.2996, -9.62964, -9.80704, 362.715)
-mesh = SubResource("BoxMesh_h2xu1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -2.85997e-07, -2.29738e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.92978e-15, 90.2996, -9.62964, -9.80704, 362.715)
-shape = SubResource("ConvexPolygonShape3D_6qans")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.2599e-07, -2.57023e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.52614e-15, 90.2995, -9.63013, -9.80704, 565.58)
-mesh = SubResource("BoxMesh_h2xu1")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.2599e-07, -2.57023e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.52614e-15, 90.2995, -9.63013, -9.80704, 565.58)
-shape = SubResource("ConvexPolygonShape3D_xyeyc")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.26239e-07, -2.61571e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.4087e-15, 90.2995, -30.329, -9.98157, 464.124)
-mesh = SubResource("BoxMesh_h2xu1")
-
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.26239e-07, -2.61571e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -8.4087e-15, 90.2995, -30.329, -9.98157, 464.124)
-shape = SubResource("ConvexPolygonShape3D_lw3qw")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.20034e-07, -2.68392e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -9.15378e-15, 90.2995, -30.329, -9.98157, 673.013)
-mesh = SubResource("BoxMesh_h2xu1")
-
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="GlowingArrow2/StaticBody3D"]
-transform = Transform3D(1.053, -3.20034e-07, -2.68392e-11, 1.61024e-08, -35.4046, 1.90081e-14, -2.04905e-14, -9.15378e-15, 90.2995, -30.329, -9.98157, 673.013)
-shape = SubResource("ConvexPolygonShape3D_t61kf")
 
 [node name="GlowingMesh" type="Node3D" parent="."]
 transform = Transform3D(4.52223e-08, 1.47057e-10, 0.997011, 0.0054171, -0.642517, -3.47744e-16, 1.03457, 0.00336429, -4.35808e-08, 79.1336, 290.336, 688.496)
@@ -370,7 +333,10 @@ transform = Transform3D(4.52223e-08, 1.47057e-10, 0.997011, 0.0054171, -0.642517
 transform = Transform3D(1, 3.08739e-10, -2.43901e-15, -1.02076e-09, 1, -7.77041e-18, 1.12252e-15, 1.08855e-17, 1, 0, 0, 0)
 
 [node name="GlowingBeam1" parent="GlowingMesh" instance=ExtResource("6_mmwt8")]
-transform = Transform3D(-4.62806, 0.00506101, 5.1926e-14, -0.0390194, -1.55634, 4.67695e-16, -9.00302e-13, 8.46902e-17, 1.003, 13.3881, 13.4137, 3.80568)
+transform = Transform3D(-4.62806, 0.00506101, 4.79095e-14, -0.0390194, -1.55634, 4.64357e-16, -9.10282e-13, 8.69313e-17, 1.003, 13.3881, 13.4137, 3.80568)
+
+[node name="GlowingBeam9" parent="GlowingMesh" instance=ExtResource("6_mmwt8")]
+transform = Transform3D(-4.62806, 0.0050334, -0.000340252, -0.0388886, -1.54785, 0.104633, 0.0025005, 0.162359, 0.997528, 14.2662, 13.3986, 21.936)
 
 [node name="GlowingBeam2" parent="GlowingMesh" instance=ExtResource("6_mmwt8")]
 transform = Transform3D(1.06597e-07, 0.00506101, 0.966559, 8.98725e-10, -1.55634, 0.00814912, 2.53059, -6.14975e-16, -4.38422e-08, 7.49353, 18.8627, -118.147)
@@ -394,322 +360,353 @@ transform = Transform3D(-0.918085, -0.385499, 0.0427122, 0.645103, -1.42648, 0.0
 transform = Transform3D(-0.984115, -0.171916, 0.0637811, 0.290003, -1.53061, 0.0355362, 0.0632735, 0.0343783, 1.00055, 14.7479, 13.1528, 198.862)
 
 [node name="Diamonds" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 815.326, 309.469, 612.269)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 790.348, 309.212, 612.137)
 
 [node name="Diamond1" parent="Diamonds" groups=["DiamondsGroup"] instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -440.529, -24.5713, 80.9816)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -422.518, -24.5713, 75.2609)
 
 [node name="Diamond2" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -474.391, -24.5713, 80.9816)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -451.883, -24.5713, 86.2974)
+
+[node name="Diamond12" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -354.346, -24.1733, 84.0262)
 
 [node name="Diamond3" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -705.097, -28.9423, 85.7266)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.003, -28.9423, 84.6643)
 
 [node name="Diamond4" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -521.725, -22.1773, 91.3466)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -487.849, -19.5853, 88.4915)
 
 [node name="Diamond5" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -724.28, -28.8743, 97.4706)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -722.344, -28.8743, 97.4706)
 
 [node name="Diamond6" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -740.36, -28.8743, 81.4506)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -679.982, -28.8743, 96.761)
 
 [node name="Diamond7" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -781.891, -30.7113, 94.3886)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -759.648, -30.7113, 95.7273)
 
 [node name="Diamond8" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -802.62, -30.7113, 84.1456)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -789.683, -30.7113, 83.575)
 
 [node name="Diamond9" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(2.45607, 0, 0, 0, 2.04421, 0, 0, 0, 2.50124, -940.89, -30.7673, 89.4866)
+transform = Transform3D(5.72211, 0, 0, 0, 4.83265, 0, 0, 0, 7.11784, -919.753, -29.9694, 89.4866)
 
 [node name="Diamond10" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -843.555, -30.7113, 89.4796)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -842.092, -30.7113, 89.4796)
 
 [node name="Diamond11" parent="Diamonds" instance=ExtResource("8_mbh7f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -617.304, -25.4893, 96.1786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -592.127, -25.4893, 96.1786)
+
+[node name="Diamond13" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -316.902, -157.059, 93.2513)
+
+[node name="Diamond14" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -266.292, -157.2, 77.8164)
+
+[node name="Diamond22" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(0.725259, 0, 0, 0, 0.690144, 0, 0, 0, 0.765113, -117.218, -159.346, 96.2743)
+
+[node name="Diamond23" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(0.938399, 0, 0, 0, 0.796895, 0, 0, 0, 0.896641, 43.2966, -160.72, 80.0726)
+
+[node name="Diamond24" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(0.938399, 0, 0, 0, 0.796895, 0, 0, 0, 0.896641, 7.72803, -156.721, 88.4906)
+
+[node name="Diamond25" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(0.938399, 0, 0, 0, 0.796895, 0, 0, 0, 0.896641, 102.806, -157.181, 55.971)
+
+[node name="Diamond21" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -284.341, -157.2, 90.9031)
+
+[node name="Diamond15" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -372.885, -157.2, 82.0453)
+
+[node name="Diamond16" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -372.885, -157.2, 92.1505)
+
+[node name="Diamond17" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -372.885, -157.2, 101.63)
+
+[node name="Diamond18" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -372.885, -157.2, 73.2242)
+
+[node name="Diamond19" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -372.885, -157.2, 63.9977)
+
+[node name="Diamond20" parent="Diamonds" instance=ExtResource("8_mbh7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -298.964, -157.295, 77.6016)
 
 [node name="GlowingTunnel" type="Node3D" parent="."]
 transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 828.795, 282.098, 693.781)
 
-[node name="GlowingRing" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, 3.98273, 1.3114)
-
-[node name="NonGlowingRing" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-
 [node name="GlowingRing5" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -27.8047, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -27.8047, 4.13223)
 
 [node name="NonGlowingRing9" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31.7874, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -31.7874, 2.82083)
 
 [node name="GlowingRing2" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -0.555298, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -0.555328, 4.13223)
 
 [node name="NonGlowingRing2" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.53806, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -4.53812, 2.82083)
 
 [node name="GlowingRing3" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -5.09604, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -5.09607, 4.13223)
 
 [node name="NonGlowingRing3" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.0788, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -9.07883, 2.82083)
 
 [node name="GlowingRing4" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -9.68036, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -9.68039, 4.13223)
 
 [node name="NonGlowingRing5" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00274658, -18.0603, 0.00100708)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.564, -18.0603, 2.8219)
 
 [node name="GlowingRing6" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -18.6922, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -18.6922, 4.13223)
 
 [node name="NonGlowingRing6" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.6749, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -22.6749, 2.82083)
 
 [node name="GlowingRing7" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -23.2329, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -23.2329, 4.13223)
 
 [node name="NonGlowingRing7" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -27.2157, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -27.2157, 2.82083)
 
 [node name="GlowingRing8" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -27.8172, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -27.8172, 4.13223)
 
 [node name="NonGlowingRing4" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -13.6631, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -13.6631, 2.82083)
 
 [node name="GlowingRing9" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -27.8172, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -27.8172, 4.13223)
 
 [node name="NonGlowingRing8" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -13.6631, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -13.6631, 2.82083)
 
 [node name="GlowingRing10" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -32.2667, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -32.2667, 4.13223)
 
 [node name="NonGlowingRing10" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -36.2495, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.566, -36.2495, 2.82083)
 
 [node name="GlowingRing11" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -64.0541, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -64.0541, 4.13223)
 
 [node name="NonGlowingRing11" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -68.0369, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -68.0369, 2.82083)
 
 [node name="GlowingRing12" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -36.8048, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -36.8048, 4.13223)
 
 [node name="NonGlowingRing12" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -40.7875, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -40.7875, 2.82083)
 
 [node name="GlowingRing13" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -41.3455, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -41.3455, 4.13223)
 
 [node name="NonGlowingRing13" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -45.3283, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -45.3283, 2.82083)
 
 [node name="GlowingRing14" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -45.9298, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -45.9298, 4.13223)
 
 [node name="GlowingRing37" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.1192, -14.552, 1.3165)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.686, -14.552, 4.13733)
 
 [node name="NonGlowingRing14" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -54.3863, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -54.3863, 2.82083)
 
 [node name="GlowingRing15" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -54.9416, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -54.9416, 4.13223)
 
 [node name="NonGlowingRing15" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -58.9244, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -58.9244, 2.82083)
 
 [node name="GlowingRing16" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -59.4824, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -59.4824, 4.13223)
 
 [node name="NonGlowingRing16" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -63.4651, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -63.4651, 2.82083)
 
 [node name="GlowingRing17" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -64.0667, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -64.0667, 4.13223)
 
 [node name="NonGlowingRing17" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -49.9126, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -49.9126, 2.82083)
 
 [node name="GlowingRing18" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -64.0667, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -64.0667, 4.13223)
 
 [node name="NonGlowingRing18" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -49.9126, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -49.9126, 2.82083)
 
 [node name="GlowingRing19" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -68.5929, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -68.5929, 4.13223)
 
 [node name="NonGlowingRing19" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -72.5756, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -72.5756, 2.82083)
 
 [node name="GlowingRing20" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -100.38, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -100.38, 4.13223)
 
 [node name="NonGlowingRing20" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -104.363, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -104.363, 2.82083)
 
 [node name="GlowingRing21" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -73.1309, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -73.1309, 4.13223)
 
 [node name="NonGlowingRing21" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -77.1137, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -77.1137, 2.82083)
 
 [node name="GlowingRing22" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -77.6717, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -77.6717, 4.13223)
 
 [node name="NonGlowingRing22" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -81.6544, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -81.6544, 2.82083)
 
 [node name="GlowingRing23" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -82.256, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -82.256, 4.13223)
 
 [node name="NonGlowingRing23" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -90.7124, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -90.7124, 2.82083)
 
 [node name="GlowingRing24" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -91.2678, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -91.2678, 4.13223)
 
 [node name="NonGlowingRing24" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -95.2505, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -95.2505, 2.82083)
 
 [node name="GlowingRing25" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -95.8086, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -95.8086, 4.13223)
 
 [node name="NonGlowingRing25" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -99.7913, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -99.7913, 2.82083)
 
 [node name="GlowingRing26" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -100.393, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -100.393, 4.13223)
 
 [node name="NonGlowingRing26" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -86.2388, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -86.2388, 2.82083)
 
 [node name="GlowingRing27" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -100.393, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -100.393, 4.13223)
 
 [node name="NonGlowingRing27" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -86.2388, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -86.2388, 2.82083)
 
 [node name="GlowingRing28" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -2.11792, -104.842, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.1944e-13, -3.87747e-08, 1.12969, -292.684, -104.842, 4.13223)
 
 [node name="NonGlowingRing28" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -108.825, 0)
-
-[node name="GlowingRing29" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -136.63, 1.3114)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -108.825, 2.82083)
 
 [node name="NonGlowingRing29" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -140.612, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -140.612, 2.82083)
 
 [node name="GlowingRing30" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -109.38, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -109.38, 4.13223)
 
 [node name="NonGlowingRing30" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -113.363, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -113.363, 2.82083)
 
 [node name="GlowingRing31" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -113.921, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -113.921, 4.13223)
 
 [node name="NonGlowingRing31" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -117.904, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -117.904, 2.82083)
 
 [node name="GlowingRing32" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -118.505, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -118.505, 4.13223)
 
 [node name="NonGlowingRing32" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -126.962, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -126.962, 2.82083)
 
 [node name="GlowingRing33" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -127.517, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -127.517, 4.13223)
 
 [node name="NonGlowingRing33" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -131.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -131.5, 2.82083)
 
 [node name="GlowingRing34" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -132.058, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -132.058, 4.13223)
 
 [node name="NonGlowingRing34" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -136.041, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -136.041, 2.82083)
 
 [node name="GlowingRing35" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -136.642, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -136.642, 4.13223)
 
 [node name="NonGlowingRing35" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -122.488, 0)
-
-[node name="GlowingRing36" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -136.642, 1.3114)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -122.488, 2.82083)
 
 [node name="GlowingRing38" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -2.11792, -122.888, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87747e-08, 1.12969, -292.684, -122.888, 4.13223)
 
 [node name="GlowingRing39" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -2.11792, -86.6764, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -292.684, -86.6764, 4.13223)
 
 [node name="GlowingRing40" parent="GlowingTunnel" instance=ExtResource("10_5e7tt")]
-transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -2.11792, -50.4791, 1.3114)
+transform = Transform3D(1.16716, -1.14707e-15, 2.59971e-13, -1.36301e-16, 1.20188, 8.25421e-09, -2.19439e-13, -3.87746e-08, 1.12969, -292.684, -50.4791, 4.13223)
 
 [node name="NonGlowingRing36" parent="GlowingTunnel" instance=ExtResource("11_r5ls7")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -122.488, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -290.566, -122.488, 2.82083)
 
 [node name="StaticBody3D10" type="StaticBody3D" parent="."]
 transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 840.742, 278.729, 692.981)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D10"]
-transform = Transform3D(-196.147, 0, 0, 0, 6.72777, 0, 0, 0, 69.5227, 53.4974, -156.579, -1.75809)
+transform = Transform3D(-119.024, 0, 0, 0, 6.72777, 0, 0, 0, 51.0753, -259.707, -156.579, 1.06277)
 mesh = SubResource("BoxMesh_lk1m1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D10"]
-transform = Transform3D(-196.147, 0, 0, 0, 6.72777, 0, 0, 0, 69.5227, 57.1657, -156.178, -1.40118)
-shape = SubResource("ConvexPolygonShape3D_15xjo")
+transform = Transform3D(-119.024, 0, 0, 0, 6.72777, 0, 0, 0, 51.0753, -259.707, -156.579, 1.06277)
+shape = SubResource("ConvexPolygonShape3D_s76ln")
 
 [node name="StaticBody3D16" type="StaticBody3D" parent="."]
-transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 861.311, 278.729, 692.981)
+transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 822.139, 271.91, 692.981)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D16"]
-transform = Transform3D(-87.3188, 0, -2.1842, 0, 6.72777, 0, -6.58393, 0, 28.9677, 339.35, -153.552, -5.64194)
+transform = Transform3D(-57.4651, 0, -1.90274, 0, 2.82214, 0, -4.33292, 0, 25.2349, -56.1735, -149.722, 5.74319)
 mesh = SubResource("BoxMesh_lk1m1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D16"]
-transform = Transform3D(-87.3188, 0, -2.1842, 0, 6.72777, 0, -6.58393, 0, 28.9677, 339.35, -153.552, -5.64194)
-shape = SubResource("ConvexPolygonShape3D_x1edc")
+transform = Transform3D(-57.4651, 0, -1.90274, 0, 2.82214, 0, -4.33292, 0, 25.2349, -56.1735, -149.722, 5.74319)
+shape = SubResource("ConvexPolygonShape3D_g7elh")
 
 [node name="StaticBody3D17" type="StaticBody3D" parent="."]
-transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 845.358, 278.729, 692.981)
+transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 828.312, 273.588, 692.981)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D17"]
-transform = Transform3D(-76.7713, 0, -13.9731, 0, 6.72777, 0, -42.1199, 0, 25.4686, 225.006, -153.552, -5.64194)
+transform = Transform3D(-55.3898, 0, -10.4565, 0, 2.82214, 0, -30.3891, 0, 19.0589, -132.396, -150.893, 5.74319)
 mesh = SubResource("BoxMesh_lk1m1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D17"]
-transform = Transform3D(-76.7713, 0, -13.9731, 0, 6.72777, 0, -42.1199, 0, 25.4686, 225.006, -153.552, -5.64194)
-shape = SubResource("ConvexPolygonShape3D_6i5r5")
+transform = Transform3D(-55.3898, 0, -10.4565, 0, 2.82214, 0, -30.3891, 0, 19.0589, -132.396, -150.893, 5.74319)
+shape = SubResource("ConvexPolygonShape3D_5lidj")
 
 [node name="StaticBody3D18" type="StaticBody3D" parent="."]
-transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 859.932, 278.729, 692.981)
+transform = Transform3D(1.33605, 0, 0, 0, 0.832032, 0, 0, 0, 1.43563, 794.495, 270.436, 727.596)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D18"]
-transform = Transform3D(-81.1796, 0, 10.8912, 0, 6.72777, 0, 32.83, 0, 26.931, 470.033, -153.552, -45.0625)
+transform = Transform3D(-53.2346, 0, 11.2798, 0, 2.82214, 0, 21.5287, 0, 27.8919, 36.2951, -148.694, -32.0949)
 mesh = SubResource("BoxMesh_lk1m1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D18"]
-transform = Transform3D(-81.1796, 0, 10.8912, 0, 6.72777, 0, 32.83, 0, 26.931, 470.033, -153.552, -45.0625)
-shape = SubResource("ConvexPolygonShape3D_1pt7h")
+transform = Transform3D(-53.2346, 0, 11.2798, 0, 2.82214, 0, 21.5287, 0, 27.8919, 36.2951, -148.694, -32.0949)
+shape = SubResource("ConvexPolygonShape3D_rixdx")
 
 [node name="StaticBody3D19" type="StaticBody3D" parent="."]
-transform = Transform3D(0.997189, 0, -0.955455, 0, 0.832032, 0, 0.889181, 0, 1.07151, 1145.04, 278.729, 263.316)
+transform = Transform3D(0.997189, 0, -0.955455, 0, 0.832032, 0, 0.889181, 0, 1.07151, 1067.3, 268.851, 276.595)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D19"]
-transform = Transform3D(-81.1796, 0, 10.8912, 0, 6.72777, 0, 32.83, 0, 26.931, 470.033, -153.552, -45.0625)
+transform = Transform3D(-55.4029, 0, 8.73512, 0, 2.82214, 0, 22.4056, 0, 21.5996, 135.303, -147.588, 269.584)
 mesh = SubResource("BoxMesh_lk1m1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D19"]
-transform = Transform3D(-81.1796, 0, 10.8912, 0, 6.72777, 0, 32.83, 0, 26.931, 470.033, -153.552, -45.0625)
-shape = SubResource("ConvexPolygonShape3D_1pt7h")
+transform = Transform3D(-55.4029, 0, 8.73512, 0, 2.82214, 0, 22.4056, 0, 21.5996, 135.303, -147.588, 269.584)
+shape = SubResource("ConvexPolygonShape3D_tf22n")
