@@ -1,13 +1,13 @@
 extends CharacterBody3D
 
 var speed
-const WALK_SPEED = 27.6
-const SPRINT_SPEED = 31.2
-const SLIDE_BOOST_MULTIPLIER = 1.5  # Multiplier for initial sliding speed
+const WALK_SPEED = 22.4
+const SPRINT_SPEED = 26.2
+const SLIDE_BOOST_MULTIPLIER = 1.0  # Multiplier for initial sliding speed
 const SLIDE_SPEED = 20  # Base speed while sliding
-const JUMP_VELOCITY = 6.8
+const JUMP_VELOCITY = 7
 const SENSITIVITY = 0.004
-const GRAVITY = 10 # Custom gravity constant
+const GRAVITY = 11.2 # Custom gravity constant
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
