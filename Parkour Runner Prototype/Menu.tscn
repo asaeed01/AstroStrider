@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://sptyh6apbmy3"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_x5a4n"]
+[ext_resource type="Texture2D" uid="uid://0hw8rv8pvvx5" path="res://Assets/maxresdefault.png" id="2_l8o75"]
+
+[sub_resource type="SystemFont" id="SystemFont_dy7c3"]
+font_names = PackedStringArray("Akira Expanded")
+
+[sub_resource type="SystemFont" id="SystemFont_itglu"]
+font_names = PackedStringArray("Akira Expanded")
+
+[sub_resource type="SystemFont" id="SystemFont_fa644"]
+font_names = PackedStringArray("Akira Expanded")
+
+[sub_resource type="SystemFont" id="SystemFont_yold0"]
+font_names = PackedStringArray("Akira Expanded")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 448.0
+offset_top = 250.0
+offset_right = 498.0
+offset_bottom = 261.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.49009, 1.14097)
+script = ExtResource("1_x5a4n")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -364.407
+offset_top = -249.788
+offset_right = 915.594
+offset_bottom = 470.212
+scale = Vector2(0.676959, 0.855093)
+texture = ExtResource("2_l8o75")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_dy7c3")
+theme_override_font_sizes/font_size = 40
+text = "Play	"
+
+[node name="Help" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_itglu")
+theme_override_font_sizes/font_size = 40
+text = "Help"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_fa644")
+theme_override_font_sizes/font_size = 40
+text = "Quit"
+
+[node name="Seperator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Seperator"]
+layout_mode = 2
+offset_left = -76.5052
+offset_top = -281.838
+offset_right = 239.495
+offset_bottom = -241.838
+theme_override_fonts/font = SubResource("SystemFont_yold0")
+theme_override_font_sizes/font_size = 38
+text = "Airstrider"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

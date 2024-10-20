@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc485qop0xeri"]
+
+[ext_resource type="Script" path="res://Help.gd" id="1_1cu7i"]
+
+[sub_resource type="SystemFont" id="SystemFont_krq7e"]
+font_names = PackedStringArray("Akira Expanded", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+
+[sub_resource type="SystemFont" id="SystemFont_5uxwf"]
+font_names = PackedStringArray("Akira Expanded")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 532.0
+offset_top = 406.0
+offset_right = 532.0
+offset_bottom = 406.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1cu7i")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_krq7e")
+theme_override_font_sizes/font_size = 40
+text = "Back"
+
+[node name="Seperator" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Seperator"]
+layout_mode = 0
+offset_left = -892.0
+offset_top = -216.0
+offset_right = 1036.0
+offset_bottom = -127.0
+theme_override_fonts/font = SubResource("SystemFont_5uxwf")
+theme_override_font_sizes/font_size = 18
+text = "In Airstrider, you are a parkour runner navigating through a futuristic
+World of obstacles. Use WASD to move, Space Bar to jump, Shift to sprint,
+A And C to crouch or slide. Crouch while sprinting to gain a speed boost,
+allowing ease of naviationPress Escape to return to this menu."
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
