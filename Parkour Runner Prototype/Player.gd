@@ -49,6 +49,10 @@ func _unhandled_input(event):
 		camera.rotate_x(-event.relative.y * SENSITIVITY)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 
+func _on_help_pressed() -> void:
+	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Help.tscn")
+
 func _physics_process(delta):
 	# Add custom gravity
 	if not is_on_floor():
@@ -61,6 +65,10 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 		if is_sliding:
 			is_sliding = false
+
+	# Handle Jump
+	if Input.is_key_pressed(KEY_0):
+		get_tree().change_scene_to_file("res://Menu.tscn")
 
 	# Handle Sprint
 	if Input.is_action_pressed("sprint") and not is_crouching:
@@ -131,6 +139,7 @@ func _physics_process(delta):
 		# Air control
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)  # More gradual deceleration
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)  # More gradual deceleration
+
 
 	# Debug information
 	print("Velocity:", velocity)

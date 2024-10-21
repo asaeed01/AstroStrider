@@ -423,7 +423,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.30181, 0.0703049, 0.247131, -0
 
 [node name="Lowpolyarms4" parent="Player/Head/Camera3D" instance=ExtResource("6_blqma")]
 transform = Transform3D(-1, 1.52574e-09, 8.74095e-08, 3.48734e-16, 0.999848, -0.0174524, -8.74228e-08, -0.0174524, -0.999848, 0, -0.16748, 0.00457764)
-visible = false
 
 [node name="RayCastRight" type="RayCast3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1.88501, 0, 0, 0, 1, 0.589264, 0.984009, 0)

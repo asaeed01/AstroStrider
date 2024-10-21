@@ -20,10 +20,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 448.0
-offset_top = 250.0
-offset_right = 498.0
-offset_bottom = 261.0
+offset_left = 552.0
+offset_top = 280.0
+offset_right = 602.0
+offset_bottom = 291.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.49009, 1.14097)
@@ -31,10 +31,10 @@ script = ExtResource("1_x5a4n")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -364.407
-offset_top = -249.788
-offset_right = 915.594
-offset_bottom = 470.212
+offset_left = -431.0
+offset_top = -307.0
+offset_right = 1131.0
+offset_bottom = 534.0
 scale = Vector2(0.676959, 0.855093)
 texture = ExtResource("2_l8o75")
 

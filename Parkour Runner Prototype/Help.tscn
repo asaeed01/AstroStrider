@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cc485qop0xeri"]
+[gd_scene load_steps=5 format=3 uid="uid://cc485qop0xeri"]
 
 [ext_resource type="Script" path="res://Help.gd" id="1_1cu7i"]
+[ext_resource type="Texture2D" uid="uid://0hw8rv8pvvx5" path="res://Assets/maxresdefault.png" id="2_obv8m"]
 
 [sub_resource type="SystemFont" id="SystemFont_krq7e"]
 font_names = PackedStringArray("Akira Expanded", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
@@ -13,13 +14,21 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 532.0
-offset_top = 406.0
-offset_right = 532.0
-offset_bottom = 406.0
+offset_left = 566.0
+offset_top = 424.0
+offset_right = 566.0
+offset_bottom = 424.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1cu7i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -580.0
+offset_top = -492.0
+offset_right = 830.0
+offset_bottom = 312.0
+texture = ExtResource("2_obv8m")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -43,16 +52,18 @@ offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="Seperator"]
 layout_mode = 0
-offset_left = -892.0
-offset_top = -216.0
-offset_right = 1036.0
-offset_bottom = -127.0
+offset_left = -858.0
+offset_top = -220.0
+offset_right = 1070.0
+offset_bottom = -85.0
 theme_override_fonts/font = SubResource("SystemFont_5uxwf")
 theme_override_font_sizes/font_size = 18
-text = "In Airstrider, you are a parkour runner navigating through a futuristic
-World of obstacles. Use WASD to move, Space Bar to jump, Shift to sprint,
-A And C to crouch or slide. Crouch while sprinting to gain a speed boost,
-allowing ease of naviationPress Escape to return to this menu."
+text = "In Airstrider, you are a parkour runner navigating 
+through a futuristic World of obstacles. Use WASD
+to move, Space Bar to jump, Shift to sprint, A And
+C to crouch or slide. Crouch while sprinting to gain
+a speed boost, allowing ease of naviation. press the 
+number 0to return to this menu."
 horizontal_alignment = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
